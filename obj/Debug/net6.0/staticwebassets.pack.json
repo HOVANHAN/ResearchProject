@@ -1,0 +1,333 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ResearchProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ResearchProject.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\BAO-CAO-HKDN-NGUYEN-VINH-NGHI.pdf",
+      "PackagePath": "staticwebassets\\File\\BAO-CAO-HKDN-NGUYEN-VINH-NGHI.pdf"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\HKDN_REPORT-1.pdf",
+      "PackagePath": "staticwebassets\\File\\HKDN_REPORT-1.pdf"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\Nhật-Ký-Công-Việc.pdf",
+      "PackagePath": "staticwebassets\\File\\Nhật-Ký-Công-Việc.pdf"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\Screenshot 2023-06-18 143553.png",
+      "PackagePath": "staticwebassets\\File\\Screenshot 2023-06-18 143553.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\[ueh intern] website quan ly thuc tap.docx",
+      "PackagePath": "staticwebassets\\File\\[ueh intern] website quan ly thuc tap.docx"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\hi.jpg",
+      "PackagePath": "staticwebassets\\File\\hi.jpg"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\hun.jpg",
+      "PackagePath": "staticwebassets\\File\\hun.jpg"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\add.png",
+      "PackagePath": "staticwebassets\\img\\add.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\back.png",
+      "PackagePath": "staticwebassets\\img\\back.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\delete.png",
+      "PackagePath": "staticwebassets\\img\\delete.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\document.png",
+      "PackagePath": "staticwebassets\\img\\document.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\download.png",
+      "PackagePath": "staticwebassets\\img\\download.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\notification.png",
+      "PackagePath": "staticwebassets\\img\\notification.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\project.png",
+      "PackagePath": "staticwebassets\\img\\project.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\task.png",
+      "PackagePath": "staticwebassets\\img\\task.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\upload.png",
+      "PackagePath": "staticwebassets\\img\\upload.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\users.png",
+      "PackagePath": "staticwebassets\\img\\users.png"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ResearchProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ResearchProject.props",
+      "PackagePath": "build\\ResearchProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ResearchProject.props",
+      "PackagePath": "buildMultiTargeting\\ResearchProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ResearchProject.props",
+      "PackagePath": "buildTransitive\\ResearchProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,138 @@
+﻿@model ResearchProject.Models.Project
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1> @Model.ProjectName</h1>
+
+@if (!string.IsNullOrEmpty(ViewBag.InvitationNotification))
+{
+    <div class="alert alert-info">
+        @Html.Raw(ViewBag.InvitationNotification)
+    </div>
+}
+
+<!-- Display a form to send an invitation -->
+@if (!Model.ResearchProjectUsers.Any(user => user.UserName == User.Identity.Name))
+{
+    <h3>Send Invitation</h3>
+    <form method="post" action="@Url.Action("AddUserToProject", "Home")">
+        @Html.Hidden("projectId", Model.Id) <!-- Pass the project's ID -->
+        <div class="form-group">
+            <label for="userEmail">Enter recipient's Email:</label>
+            <input type="email" name="userEmail" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Send Invitation</button>
+    </form>
+}
+
+
+<div>
+    <h4>Project</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+    </dl>
+</div>
+
+<div class="card rounded-3">
+    <div class="card-body p-4">
+
+      
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <th scope="col">Team Member</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Start</th>
+                    <th scope="col">End</th>
+                    <th scope="col">Complete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var task in Model.Tasks)
+                {
+                    <tr>
+
+
+                        <td>@(task.ProjectUser != null ? task.ProjectUser.Name : "No User Assigned")</td>
+                        <td>@task.TaskName</td>
+                        <td>@task.TaskDescription</td>
+                        <td>@task.StartDate.ToShortDateString() </td>
+                        <td>@task.EndDate.ToShortDateString()</td>
+
+                        <td>
+                          
+                            <form asp-controller="Tasks" asp-action="UpdateCompletionStatus" method="post">
+                                <input type="hidden" name="id" value="@task.Id" />
+                                <span class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="isCompleted"
+                                    @(task.IsCompleted ? "checked" : "") />
+                                </span>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </form>
+
+                        </td>
+
+                    </tr>
+
+                }
+            </tbody>
+
+
+        </table>
+    </div>
+
+<span class="Add">
+    <img decoding="async" src="@("~/img/add.png")" asp-append-version="true" />
+    <a asp-controller="Tasks" asp-action="Create" asp-route-ProjectId="@Model?.Id" class="btn btn-Add">Add task</a>
+</span>
+</div>
+
+<style>
+    .Add {
+        display: inline-block;
+        background-color: #67BF7F;
+        border-radius: 10px;
+        margin: 20px 0 20px 380px;
+        width: 240px;
+        height: 50px;
+    }
+
+        .Add img {
+            margin: 10px 10px 0 10px;
+            height: 20px;
+            width: 20px;
+        }
+
+        .Add a {
+            padding-top: 12px;
+        }
+</style>
+
+
