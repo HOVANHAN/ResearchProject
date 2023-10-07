@@ -13,9 +13,12 @@
 </head>
 <body>
     <Partial Name = "header" />
-    <Partial Name ="sidebar"/>
-    <div class="container">
-        <main role="main" class="pb-3">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <Partial Name="sidebar" />
+    }
+    <div class="container" >
+        <main role="main" class="pb-3" >
             @RenderBody()
         </main>
     </div>
@@ -46,11 +49,15 @@
 </body>
 </html>
 <style>
+    .body{
+        height: 100%;
+
+    }
     .container {
-        margin-top: 50px;
+        margin-top: 65px;
         margin-left: 200px;
         height: 100%;
-        background-color: rgb(245,255,250);
+        background-color: #FFFFFF;
     }
     .container pb-3{
         height: 100%;

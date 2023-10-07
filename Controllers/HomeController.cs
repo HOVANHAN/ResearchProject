@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -13,15 +14,17 @@ namespace ResearchProject.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly ResearchProjectContext _context;
         private readonly UserManager<ResearchProjectUser> _userManager;
+        private readonly IWebHostEnvironment _env;
 
-        public HomeController(ILogger<HomeController> logger, ResearchProjectContext context, UserManager<ResearchProjectUser> userManager)
+        public HomeController(ILogger<HomeController> logger, ResearchProjectContext context, UserManager<ResearchProjectUser> userManager, IWebHostEnvironment env)
         {
             _logger = logger;
             _context = context;
             _userManager = userManager;
+            _env = env;
         }
 
-
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var user = await _userManager.GetUserAsync(User);
@@ -60,9 +63,7 @@ namespace ResearchProject.Controllers
 
 
 
-                //ViewBag.InvitationNotification = TempData["InvitationNotification"];
                 var isSender = true;
-                // Create a view model to combine user's projects and invitations
                 var viewModel = new IndexViewModel
                 {
                     IsSender = isSender,
@@ -70,8 +71,7 @@ namespace ResearchProject.Controllers
                     SentInvitations = sentInvitations,
                     AllInvitations = allInvitations
                     
-                    //ReceivedInvitations = receivedInvitations,
-                    //RespondedInvitations = respondedInvitations
+                 
                 };
 
                 return View(viewModel);
@@ -84,9 +84,6 @@ namespace ResearchProject.Controllers
                     UserProjects = new List<Project>(),
                     SentInvitations = new List<Invitation>(),
                     AllInvitations= new List<Invitation>()
-                    
-                    //RespondedInvitations = new List<Invitation>(),
-                    //ReceivedInvitations = new List<Invitation>(),
                 };
 
                 return View(emptyViewModel);
@@ -216,19 +213,10 @@ namespace ResearchProject.Controllers
                     // Redirect back to the project details page or wherever you want
                     return RedirectToAction("Index");
                 }
-                //else
-                //{
-                //    // The invitation has already been accepted or rejected
-                //    TempData["InvitationNotification"] = "The invitation has already been processed.";
-                //}
+               
             }
-
-            // Redirect to a relevant page if the invitation cannot be rejected
             return RedirectToAction("Index");
         }
-
-
-
 
 
         public IActionResult Create()
@@ -271,12 +259,15 @@ namespace ResearchProject.Controllers
                 return NotFound();
             }
 
-            //var project = await _context.Projects
-            //    .FirstOrDefaultAsync(m => m.Id == id);
-            var project = _context.Projects
+            //var project = _context.Projects
+            //    .Include(p => p.Tasks)
+            //    .ThenInclude(t => t.ProjectUser)
+            //    .FirstOrDefault(p => p.Id == id);
+            var project = await _context.Projects
                 .Include(p => p.Tasks)
                 .ThenInclude(t => t.ProjectUser)
-                .FirstOrDefault(p => p.Id == id);
+                .Include(p => p.ResearchProjectUsers) // Include the members of the project
+                .FirstOrDefaultAsync(p => p.Id == id);
 
             ViewData["ProjectId"] = id;
 
@@ -303,6 +294,73 @@ namespace ResearchProject.Controllers
             return NotFound();
 
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UploadDocument(int Id, IFormFile file)
+        {
+            if (file != null && file.Length > 0)
+            {
+                // Lấy dự án theo projectid
+                var project = await _context.Projects.FindAsync(Id);
+                var user = await _userManager.GetUserAsync(User);
+
+                if (project != null)
+                {
+                    // Lưu tệp vào thư mục lưu trữ (webroot/File)
+                    var fileName = Path.GetFileName(file.FileName);
+                    var filePath = Path.Combine(_env.WebRootPath, "File", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+
+                    // Tạo một đối tượng Document và gắn nó với dự án
+                    var document = new Document
+                    {
+                        DocumentName = fileName,
+                        UploadDate = DateTime.Now,
+                        path = filePath,
+                        ResearchProjectUserId = user.Id
+                    };
+
+                    project.Documents.Add(document);
+                    _context.Document.Add(document);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            // Chuyển hướng lại trang chi tiết dự án sau khi tải tệp lên
+            return RedirectToAction("Details", new { id = Id });
+        }
+
+        public IActionResult Document(int ProjectId)
+        {
+            // Lấy danh sách tài liệu thuộc dự án có projectId
+            var documents = _context.Document
+                .Where(d => d.Projects.Any(p => p.Id == ProjectId))
+                .ToList();
+
+            return View(documents);
+        }
+        public IActionResult Member(int ProjectId)
+        {
+            var project = _context.Projects
+                .Include(p => p.ResearchProjectUsers) // Ensure ResearchProjectUsers are loaded
+                .FirstOrDefault(p => p.Id == ProjectId);
+        
+
+            if (project == null)
+            {
+                return NotFound(); // Handle project not found
+            }
+
+            return View(project);
+
+        }
+
+
 
 
 

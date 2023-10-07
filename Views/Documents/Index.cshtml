@@ -12,41 +12,44 @@
 </span>
 
 
-<table class="table ">
-    <thead>
-        <tr>
-            <th>Document</th>
-            <th>Upload Date</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var document in Model)
-        {
-            <tr class="Document">
-                <td>@document.DocumentName</td>
-                <td>@document.UploadDate.ToString("yyyy-MM-dd")</td>
-                <td class="Acction">
-                    <span class="download">
-                        <img decoding="async" src="@("~/img/download.png")" asp-append-version="true"  />
-                        <a href="@Url.Action("Download", "Documents", new { id = document.Id })" class="btn btn-download">Download</a>
-                    </span>
-                    <span class="delete">
-                        <img decoding="async" src="@("~/img/delete.png")" asp-append-version="true"/>
-                        @*<a asp-action="Delete" asp-route-id="@document.Id" class="btn btn-delete">Delete</a>*@
-                        <form asp-action="Delete" method="post">
-                            <input type="hidden" name="id" value="@document.Id" />
-                            <button type="submit" class="btn btn-delete">Delete</button>
-                        </form>
-                      
 
-                    </span>
-                </td>
+    <table class="table ">
+        <thead>
+            <tr>
+                <th scope="col" style="width: 25%;">Document</th>
+                <th scope="col" style="width: 15%;">Upload Date</th>
+                <th scope="col" style="width: 40%; margin-right:40px; padding-left: 250px;">Action</th>
                 
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var document in Model)
+            {
+                <tr class="Document">
+                    <td>@document.DocumentName</td>
+                    <td>@document.UploadDate.ToString("yyyy-MM-dd")</td>
+                <td class="Acction"  style="  padding-left: 100px;">
+                        <span class="download">
+                            <img decoding="async" src="@("~/img/download.png")" asp-append-version="true" />
+                            <a href="@Url.Action("Download", "Documents", new { id = document.Id })" class="btn btn-download">Download</a>
+                        </span>
+                        <span class="delete">
+                            <img decoding="async" src="@("~/img/delete.png")" asp-append-version="true" />
+                            @*<a asp-action="Delete" asp-route-id="@document.Id" class="btn btn-delete">Delete</a>*@
+                            <form asp-action="Delete" method="post">
+                                <input type="hidden" name="id" value="@document.Id" />
+                                <button type="submit" class="btn btn-delete">Delete</button>
+                            </form>
+
+
+                        </span>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
 
 
 

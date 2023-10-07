@@ -4,119 +4,9 @@
 @*@model IEnumerable<ResearchProject.Models.Project>*@
 @model ResearchProject.Models.IndexViewModel
 
-<div class="container">
+
     <div class="row">
    
-        <div class="col-sm-9">
-        @if (TempData.ContainsKey("AcceptanceNotification"))
-        {
-            <div class="alert alert-success">
-                @TempData["AcceptanceNotification"]
-            </div>
-        }
-
-        <!-- Display invitation notification if it exists -->
-        @if (!string.IsNullOrEmpty(ViewBag.InvitationNotification))
-        {
-            <div class="alert alert-info">
-                @Html.Raw(ViewBag.InvitationNotification)
-            </div>
-        }
-
-@*        @foreach (var invitation in Model.ReceivedInvitations)
-        {
-            <div>
-                <p>Thời gian gửi: @invitation.SentDate</p>
-                <p>Nội dung: @invitation.SendMessage</p>
-                
-                @if (!invitation.IsAccepted)
-                {
-                    <form method="post" action="@Url.Action("AcceptInvitation", "Home")">
-                        @Html.Hidden("invitationId", invitation.Id)
-                        <button type="submit" class="btn btn-success">Accept Invitation</button>
-                    </form>
-                    <form method="post" action="@Url.Action("RejectInvitation", "Home")">
-                        @Html.Hidden("invitationId", invitation.Id)
-                        <button  type="submit" class="btn btn-danger">Reject Invitation</button>
-                    </form>
-                }
-            </div>
-        }
-
-        <h2>Responded Invitations</h2>
-        <ul>
-            @foreach (var invitation in Model.RespondedInvitations)
-            {
-                <li>
-                    <strong>Responded on:</strong> @invitation.ResponseDate
-                    <br />
-                    <strong>Response:</strong> @(invitation.IsAccepted ? "Accepted" : "Rejected")
-                    <br />
-                    <strong>Response Message:</strong> @invitation.ResponseMessage
-                </li>
-            }
-        </ul>*@
-
-        <h2>All Invitations</h2>
-        @foreach (var invitation in Model.AllInvitations)
-        {
-            <div>
-               
-
-                @if (!invitation.IsAccepted && !invitation.IsRejected)
-                {
-                   
-                    <div class="card">
-                        <div class="card-body">
-                            <p>Thời gian gửi: @invitation.SentDate</p>
-                            <p>Nội dung: @invitation.SendMessage</p>
-                    <form method="post" action="@Url.Action("AcceptInvitation", "Home")">
-                        @Html.Hidden("invitationId", invitation.Id)
-                        <button type="submit" class="btn btn-success">Accept Invitation</button>
-                    </form>
-                    <form method="post" action="@Url.Action("RejectInvitation", "Home")">
-                        @Html.Hidden("invitationId", invitation.Id)
-                        <button type="submit" class="btn btn-danger">Reject Invitation</button>
-                    </form>
-                    </div>
-                    </div>
-                }
-                else
-                {
-                    <div class="card">
-                        <div class="card-body">
-                    <p>Responded on: @(invitation.ResponseDate ?? invitation.SentDate)</p>
-                    <p>Response: @(invitation.IsAccepted ? "Accepted" : "Rejected")</p>
-                    <p>Response Message: @invitation.ResponseMessage</p>
-                    </div>
-                    </div>
-                }
-            </div>
-        }
-
-
-        <h2>Sent Invitations</h2>
-        <ul>
-            @foreach (var invitation in Model.SentInvitations)
-            {
-                <li>
-                    <strong>Sent on:</strong> @invitation.SentDate
-                    <br />
-                    <strong>Message:</strong> @invitation.SendMessage
-                </li>
-            }
-        </ul>
-
-      
-
-
-     
-            <p>
-                <a asp-action="Create" class="btn btn-primary">Create New</a>
-            </p>
- 
-            <div class="row">
-
                 @foreach (var item in Model.UserProjects)
                 {
                     <div class="col-md-3">
@@ -137,68 +27,17 @@
                     </div>
                 }
 
-
-                
-
             </div>
-        </div>
+  
 
-    </div>
-</div>
 
 <style>
-    .container {
-        max-width: 95%;
-        margin: 0 auto;
-        padding-top:35px;
-    }
-
+   
     .row {
         display: flex;
         flex-wrap: wrap;
     }
 
-    /* Style for the content area */
-    .content {
-        margin-left: 10px;
-        padding: 20px;
-    }
 
-    .col-sm-3 {
-        flex: 0 0 25%;
-    }
-
-    .col-md-4 {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px;
-    }
-
-    .col-sm-9 {
-        flex: 0 0 75%;
-        margin-left: 250px;
-    }
-
-    .member-list {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-    }
-
-        .member-list li {
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 15%;
-            width: auto;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            margin: 5px;
-            cursor: pointer;
-        }
 
 </style>

@@ -5,6 +5,9 @@
 }
 
 <div class="row">
+    <div class="col-md-6">
+        <img decoding="async" src="@("~/img/logo.png")" asp-append-version="true" width="500px" />
+    </div>
     <div class="col-md-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
           
@@ -29,7 +32,7 @@
                 <label asp-for="Input.ConfirmPassword"></label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" style="border-radius: 40px;">Register</button>
         </form>
     </div>
 
@@ -39,3 +42,31 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+
+    .row{
+        margin: 150px 0 0 50px;
+    }
+    .form-floating input.form-control {
+        border: 2px solid #007bff; /* Màu và độ dày của viền */
+        outline: none; /* Loại bỏ viền khi focus */
+        border-radius: 15px;
+        margin: 10px;
+        padding-right:10px;
+    }
+
+        /* Tạo màu chữ đậm cho label khi focus vào input */
+        .form-floating input.form-control:focus + label {
+            font-weight: bold;
+            
+        }
+        label{
+            margin-left: 10px;
+        }
+    button{
+        border-radius: 40px;
+        margin:10px 0 0 10px;
+    }
+
+</style>

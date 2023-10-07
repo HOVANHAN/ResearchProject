@@ -1,70 +1,74 @@
 ﻿<div class="sidebar">
-    <ul>
+    <ul class="nav">
         <li>
-            <span class="nav-item">
+            <span class="nav-item  border-bottom border-danger">
                 <img decoding="async" src="@("~/img/project.png")" asp-append-version="true" width="20px" />
                 <a class="nav-link text-dark" asp-area="" asp-controller="Projects" asp-action="Index">Reserch Project</a>
             </span>
         </li>
-
+        
         <li>
-            <span class="nav-item">
+            <span class="nav-item  border-bottom border-danger">
                 <img decoding="async" src="@("~/img/task.png")" asp-append-version="true" width="20px" />
                 <a class="nav-link text-dark" asp-area="" asp-controller="Tasks" asp-action="Index">Task</a>
             </span>
         </li>
         <li>
-            <span class="nav-item">
-                <img decoding="async" src="@("~/img/document.png")" asp-append-version="true" width="20px" />
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
-                    <div class="dropdown-content">
-                        <a href="#">Item 1</a>
-                        <a href="#">Item 2</a>
-                        <a href="#">Item 3</a>
-                    </div>
-                </div>
+            <span class="nav-item  border-bottom border-danger">
+              
+                    <img decoding="async" src="@("~/img/notification.png")" asp-append-version="true" width="20px" />
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Invitations" asp-action="Index">Notifications</a>
+             
+                </span>
 
-             </span>
         </li>
         <li>
-            <span class="nav-item" >
-                <img decoding="async" src="@("~/img/document.png")" asp-append-version="true" width="20px"/>
+            <span class="nav-item  border-bottom border-danger">
+                <img decoding="async" src="@("~/img/document.png")" asp-append-version="true" width="20px" />
                 <a class="nav-link text-dark" asp-area="" asp-controller="Documents" asp-action="Index">Document</a>
             </span>
         </li>
 
     </ul>
+    
 </div>
 
+
+
 <style>
-    /* Style for the sidebar */
+  
     .sidebar {
         position: fixed;
-        top: 50px; /* Chiều cao của header */
+        top: 50px; 
         left: 0;
-        width: 200px; /* Chiều rộng của sidebar */
-        height: 100%; /* Chiều cao của sidebar bằng chiều cao của cửa sổ trình duyệt */
-        background-color: rgb(240,255,255); /* Màu nền của sidebar */
-        overflow-y: auto; /* Cho phép cuộn nếu sidebar quá dài */
+        width: 200px; 
+        height: 100%; 
+        background-color: rgb(240,255,255); 
+        overflow-y: auto; 
     }
 
     .nav-item {
-        margin-left:10px;
+        margin-left:15px;
         margin-top: 10px;
-        display: flex; /* Sử dụng flexbox để căn chỉnh nội dung trên cùng một dòng */
-        align-items: center; /* Canh giữa các phần tử theo chiều dọc */
+        padding-left: 5px;
+        display: flex;
+        align-items: center; 
+        width: 170px;
+       
+      
     }
 
 
         .sidebar ul {
             list-style-type: none;
-            padding: 0;
+            padding: 5px;
+            
         }
 
             .sidebar ul li {
-                padding: 10px 0;
+               
                 text-align: center;
+               
             }
 
                 .sidebar ul li a {
@@ -72,48 +76,11 @@
                     text-decoration: none;
                 }
 
-                .sidebar ul li a:hover,
-                .sidebar ul li a:active {
+                .sidebar ul li a span:hover,
+                .sidebar ul li a span:active {
                     background-color: #99FFFF; 
                 }
 
-    /* Style for the content area */
-    .content {
-        margin-left: 250px;
-        padding: 20px;
-    }
-    /* Phần CSS cho dropdown button */
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
 
-    .dropbtn {
-        color: black;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Phần CSS cho dropdown content */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-    /* Hiển thị dropdown content khi hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
 
 </style>

@@ -73,8 +73,8 @@ namespace ResearchProject.Areas.Identity.Pages.Account
         {
 
             [Required]
-            [Display(Name = "Họ Tên")]
-            [StringLength(255, ErrorMessage = "Độ dài tối đa là 255 kí tự")]
+            [Display(Name = "Full Name")]
+            [StringLength(255, ErrorMessage = "Maximum length 25 characters")]
 
             public string Name { get; set; }
 

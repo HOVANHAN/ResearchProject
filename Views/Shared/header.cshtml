@@ -1,7 +1,10 @@
 ﻿<header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 position-fixed header">
         <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ResearchProject</a>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img decoding="async" src="@("~/img/pt.png")" asp-append-version="true" width="160px" />
+            </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -10,10 +13,10 @@
                 
             </div>
             <Partial name="_LoginPartial" />
-            <div id="notification-button">
+           @* <div id="notification-button">
                 Thông báo
                 <div id="notification-count">0</div>
-            </div>
+            </div>*@
 
         </div>
     </nav>
@@ -25,7 +28,7 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 50px; /* Chiều cao của header */
+        height: 60px; /* Chiều cao của header */
         z-index: 100; /* Để đảm bảo header hiển thị trên cùng */
     }
 </style>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xU36Z6u3HDxHHHID89RW14jiABNZ6GmJzJwWx17bU/k=",
+  "Hash": "fvl5bEkrxoArZ0qtEB0P8hsA373dwXflMZrpEBm9eN8=",
   "Source": "ResearchProject",
   "BasePath": "_content/ResearchProject",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\File\\[ueh intern] website quan ly thuc tap.docx"
     },
     {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\5ae.jpg",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "File/5ae.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\File\\5ae.jpg"
+    },
+    {
       "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\BAO-CAO-HKDN-NGUYEN-VINH-NGHI.pdf",
       "SourceId": "ResearchProject",
       "SourceType": "Discovered",
@@ -1137,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\File\\BAO-CAO-HKDN-NGUYEN-VINH-NGHI.pdf"
+    },
+    {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\haha.jpg",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "File/haha.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\File\\haha.jpg"
     },
     {
       "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\hi.jpg",
@@ -1190,6 +1224,40 @@
       "OriginalItemSpec": "wwwroot\\File\\hun.jpg"
     },
     {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\im.jpg",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "File/im.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\File\\im.jpg"
+    },
+    {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\ko thấy j hết.jpg",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "File/ko thấy j hết.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\File\\ko thấy j hết.jpg"
+    },
+    {
       "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\Nhật-Ký-Công-Việc.pdf",
       "SourceId": "ResearchProject",
       "SourceType": "Discovered",
@@ -1222,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\File\\Screenshot 2023-06-18 143553.png"
+    },
+    {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\File\\thèm.jpg",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "File/thèm.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\File\\thèm.jpg"
     },
     {
       "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\add.png",
@@ -1309,6 +1394,23 @@
       "OriginalItemSpec": "wwwroot\\img\\download.png"
     },
     {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\logo.png",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "img/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
+    {
       "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\notification.png",
       "SourceId": "ResearchProject",
       "SourceType": "Discovered",
@@ -1341,6 +1443,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\project.png"
+    },
+    {
+      "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\pt.png",
+      "SourceId": "ResearchProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\",
+      "BasePath": "_content/ResearchProject",
+      "RelativePath": "img/pt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\pt.png"
     },
     {
       "Identity": "E:\\HUYẾT TƯ VŨ\\Tốt nghiệp\\Đồ Án\\New folder\\ResearchProject\\wwwroot\\img\\task.png",

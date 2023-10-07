@@ -1,0 +1,85 @@
+﻿@model IEnumerable<ResearchProject.Models.Invitation>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <h2 style="text-align:center;margin-bottom:20px;">All Notifications</h2>
+<table class="table">
+
+    @foreach (var invitation in Model)
+    {
+            @if (!invitation.IsAccepted && !invitation.IsRejected)
+            {
+
+                <div class="card" >
+                    <div class="card-body" style="display:flex;">
+                        <div class="row">
+                            <div class="col-md-9">
+                            <p>@invitation.SendMessage </p>
+                            <p>@invitation.SentDate </p>
+                            </div>
+                            <div class="col-md-3" style="display:flex;">
+                                <span style="margin-right:15px;">
+                                    <form method="post" action="@Url.Action("AcceptInvitation", "Home")">
+                                        @Html.Hidden("invitationId", invitation.Id)
+                                        <button type="submit" class="btn btn-success">Accept</button>
+                                    </form>
+                                </span>
+                                <span>
+                                    <form method="post" action="@Url.Action("RejectInvitation", "Home")">
+                                        @Html.Hidden("invitationId", invitation.Id)
+                                        <button type="submit" class="btn btn-danger">Reject</button>
+                                    </form>
+                                </span>
+                                
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+            }
+            else
+            {
+            <div class="card">
+                <div class="card-body" style="display:flex;">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p>Response Message: @invitation.ResponseMessage</p>
+                            <p>Responded on: @(invitation.ResponseDate ?? invitation.SentDate)</p>
+                        </div>
+                        <div class="col-md-3" style="display:flex;margin-right:20px;">
+                           
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+               
+            }
+      
+    }
+
+
+</table>
+<style>
+    .card {
+        padding:5px;
+        margin:10px;
+    }
+    .card .row{
+        width:95%;
+    }
+    .card .card-body{
+        padding: 5px;
+        margin-left:10px;
+    }
+    .card p{
+        margin:auto;
+    }
+</style>

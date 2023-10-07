@@ -1,0 +1,23 @@
+﻿@model ResearchProject.Models.Project
+
+<h1>Project Members</h1>z
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <!-- Add more columns as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.ResearchProjectUsers)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <!-- Add more columns as needed -->
+            </tr>
+        }
+    </tbody>
+</table>

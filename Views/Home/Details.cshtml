@@ -4,75 +4,115 @@
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1> @Model.ProjectName</h1>
 
-@if (!string.IsNullOrEmpty(ViewBag.InvitationNotification))
-{
-    <div class="alert alert-info">
-        @Html.Raw(ViewBag.InvitationNotification)
+<h1 class="project-header"> @Model.ProjectName</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <span class="nav-item">
+            <img decoding="async" src="@("~/img/document.png")" asp-append-version="true" width="20px" />
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Document" asp-route-ProjectId="@Model?.Id">Document</a>
+        </span>
     </div>
-}
-
-<!-- Display a form to send an invitation -->
-@if (!Model.ResearchProjectUsers.Any(user => user.UserName == User.Identity.Name))
-{
-    <h3>Send Invitation</h3>
-    <form method="post" action="@Url.Action("AddUserToProject", "Home")">
-        @Html.Hidden("projectId", Model.Id) <!-- Pass the project's ID -->
-        <div class="form-group">
-            <label for="userEmail">Enter recipient's Email:</label>
-            <input type="email" name="userEmail" class="form-control" required />
-        </div>
-        <button type="submit" class="btn btn-primary">Send Invitation</button>
-    </form>
-}
-
-
+   
+</div>
 <div>
-    <h4>Project</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StartDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StartDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EndDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EndDate)
-        </dd>
-    </dl>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
 </div>
 
-<div class="card rounded-3">
-    <div class="card-body p-4">
+<div class="row">
+    <!-- Cột cho thông tin dự án -->
+    <div class="col-md-9">
+        <div class="project-card">
+            <div class="card-header">
+                <h5>Project Detail</h5>
+            </div>
+            <div class="card-body">
+                <h6>Project Details</h6>
+                <dl class="row">
+                    
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Description)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.StartDate)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.StartDate)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.EndDate)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.EndDate)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 
-      
+    <!-- Cột cho danh sách thành viên -->
+    <div class="col-md-3">
+        <div class="project-card">
+            <div class="card-header">
+                <h5>Members</h5>
+            </div>
+            <div class="card-body">
+                @foreach (var user in Model.ResearchProjectUsers)
+                {
+                    <ul>
+                        <td>@user.Name</td>
+
+                    </ul>
+                }
+            </div>
+           
+            @if (!string.IsNullOrEmpty(ViewBag.InvitationNotification))
+            {
+                <div class="alert alert-info">
+                    @Html.Raw(ViewBag.InvitationNotification)
+                </div>
+            }
+            
+            <h3>Send Invitation</h3>
+            <form method="post" action="@Url.Action("AddUserToProject", "Home")">
+                @Html.Hidden("projectId", Model.Id) <!-- Pass the project's ID -->
+                <div class="form-group">
+                    <label for="userEmail">Enter recipient's Email:</label>
+                    <input type="email" name="userEmail" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-outline-primary" style="margin:5px 0 0 20px;align-items:center;">Send Invitation</button>
+            </form>
+           
+            
+        </div>
+    </div>
+</div>
+
+<div class="card rounded-3" style="margin-bottom: 20px;">
+    <div class="card-body p-4">
+        <div class="row" style="display: flex; align-items: center; height: 80px">
+            <h3 style=" width: 200px; margin: 0 300px 0 200px;">Task List</h3>
+            <span class="Add">
+                <img decoding="async" src="@("~/img/add.png")" asp-append-version="true" />
+                <a asp-controller="Tasks" asp-action="Create" asp-route-ProjectId="@Model?.Id" class="btn btn-Add">Add task</a>
+            </span>
+        </div>
         <table class="table mb-0">
             <thead>
                 <tr>
-                    <th scope="col">Team Member</th>
-                    <th scope="col">Task</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Start</th>
-                    <th scope="col">End</th>
-                    <th scope="col">Complete</th>
+                    <th scope="col" style="width: 10%;">Team Member</th>
+                    <th scope="col" style="width: 10%;">Task</th>
+                    <th scope="col" style="width: 30%;">Description</th>
+                    <th scope="col" style="width: 7%;">Start</th>
+                    <th scope="col" style="width: 7%;">End</th>
+                    <th scope="col" style="width: 15%;">Complete</th>
                 </tr>
+
             </thead>
             <tbody>
                 @foreach (var task in Model.Tasks)
@@ -86,11 +126,11 @@
                         <td>@task.StartDate.ToShortDateString() </td>
                         <td>@task.EndDate.ToShortDateString()</td>
 
-                        <td>
-                          
-                            <form asp-controller="Tasks" asp-action="UpdateCompletionStatus" method="post">
+                        <td >
+
+                            <form asp-controller="Tasks" asp-action="UpdateCompletionStatus" method="post" style=" display: flex; margin-left:25px;">
                                 <input type="hidden" name="id" value="@task.Id" />
-                                <span class="form-check">
+                                <span class="form-check" style="padding:    7px 0 0 5px;">
                                     <input class="form-check-input" type="checkbox" name="isCompleted"
                                     @(task.IsCompleted ? "checked" : "") />
                                 </span>
@@ -108,18 +148,33 @@
         </table>
     </div>
 
-<span class="Add">
-    <img decoding="async" src="@("~/img/add.png")" asp-append-version="true" />
-    <a asp-controller="Tasks" asp-action="Create" asp-route-ProjectId="@Model?.Id" class="btn btn-Add">Add task</a>
-</span>
+
+  
 </div>
 
 <style>
+   
+    .project-header {
+        margin: 80px auto 10px auto;
+        width: fit-content;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 2px solid #2980b9;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+        .project-header:hover {
+            background-color: #2980b9; /* Màu nền khi hover */
+        }
+
     .Add {
         display: inline-block;
         background-color: #67BF7F;
         border-radius: 10px;
-        margin: 20px 0 20px 380px;
+        margin: 0px 0 20px 80px;
         width: 240px;
         height: 50px;
     }
@@ -133,6 +188,53 @@
         .Add a {
             padding-top: 12px;
         }
+
+    .project-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .card-body {
+        padding: 0 10px 10px 10px;
+    }
+
+        .card-body th {
+            background-color: rgb(234,244,247); /* Màu nền đậm */
+            color: black; /* Màu chữ */
+        }
+
+
+    .member-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .member-list li {
+            margin-bottom: 5px;
+        }
+
+    .card-footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    th {
+        background-color: rgb(234,244,247); /* Màu nền đậm */
+        color: black; /* Màu chữ */
+    }
+
 </style>
 
 
