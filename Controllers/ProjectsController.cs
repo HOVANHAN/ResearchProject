@@ -147,7 +147,9 @@ namespace ResearchProject.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
+                return RedirectToAction("Details", "Home", new { id = project.Id });
+
             }
             return View(project);
         }
@@ -186,7 +188,9 @@ namespace ResearchProject.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            //return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Home");
+
         }
 
         private bool ProjectExists(int id)

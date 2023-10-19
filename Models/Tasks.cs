@@ -9,7 +9,7 @@ namespace ResearchProject.Models
         public int Id { get; set; }
         public string TaskName { get; set; }
 
-        [StringLength(100, ErrorMessage = "Mô tả không được vượt quá 100 ký tự.")]
+        [StringLength(1000, ErrorMessage = "Mô tả không được vượt quá 1000 ký tự.")]
         public string? TaskDescription { get; set; }
 
         [DataType(DataType.Date)]
